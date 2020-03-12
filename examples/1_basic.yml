@@ -1,0 +1,5 @@
+[
+  {name: MY_CLIENT_ID, default: 'xxx'},
+  {name: MY_CLIENT_PRIVATE_KEY},
+  {name: PROD, optional: true, default: false},
+]
