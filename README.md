@@ -1,6 +1,6 @@
 # env.cr
 
-env.cr ensure your environment variables are properly set.
+env.cr ensure your environment variables are set properly.
 
 ## Installation
 
@@ -16,20 +16,27 @@ env.cr ensure your environment variables are properly set.
 
 ## Usage
 
+Create an yaml file containing an array of items such as follow:
+```yaml
+# ./env.yml
+[
+  {name: MY_CLIENT_PRIVATE_KEY}, # By default, variable are required
+  {name: PROD, optional: true}, # You can flag a variable as optional
+  {name: MY_CLIENT_ID, default: 'xxx'}, # You can set a default value in case the variable is missing
+]
+```
+
 ```crystal
 require "envcr"
 
-begin
-    ENVCR::load
-rescue
-    puts "Environment is not as expected"
-end
+ENVCR::load! "../env.yml" # path to your YAML file
+
 ```
 
 
 ## Development
 
-TODO: Write development instructions here
+`$ crystal spec` : run the tests
 
 ## Contributing
 
