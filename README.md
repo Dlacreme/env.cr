@@ -16,7 +16,7 @@ env.cr ensure your environment variables are set properly.
 
 ## Usage
 
-Create an yaml file containing an array of items such as follow:
+Create a yaml file containing an array of items such as follow:
 ```yaml
 # ./env.yml
 [
