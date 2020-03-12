@@ -29,7 +29,7 @@ Create a yaml file containing an array of items such as follow:
 ```crystal
 require "envcr"
 
-ENVCR::load! "../env.yml" # path to your YAML file
+ENVCR.load! "../env.yml" # path to your YAML file
 
 ```
 
