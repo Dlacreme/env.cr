@@ -1,6 +1,6 @@
 require "yaml"
 
-module ENVCR
+module Envcr
   class EnvItem
     YAML.mapping(
       name: String,

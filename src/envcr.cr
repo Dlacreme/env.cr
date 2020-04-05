@@ -8,7 +8,7 @@ class Array(T)
   end
 end
 
-module ENVCR
+module Envcr
   extend self
   VERSION = "0.1.0"
 
