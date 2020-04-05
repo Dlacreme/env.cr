@@ -16,7 +16,7 @@ env.cr ensure your environment variables are set properly.
 
 ## Usage
 
-Create an yaml file containing an array of items such as follow:
+Create a yaml file containing an array of items such as follow:
 ```yaml
 # ./env.yml
 [
@@ -29,7 +29,7 @@ Create an yaml file containing an array of items such as follow:
 ```crystal
 require "envcr"
 
-ENVCR::load! "../env.yml" # path to your YAML file
+ENVCR.load! "../env.yml" # path to your YAML file
 
 ```
 
@@ -40,7 +40,7 @@ ENVCR::load! "../env.yml" # path to your YAML file
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/env.cr/fork>)
+1. Fork it (<https://github.com/dlacreme/env.cr/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
