@@ -16,7 +16,7 @@ module Envcr
 
     def eval
       return if ENV.has_key?(self.name)
-      raise ENVCRException.from_env_item(self) if self.default.nil? && self.optional == false
+      raise EnvcrException.from_env_item(self) if self.default.nil? && self.optional == false
       ENV[self.name] = self.default if self.default.nil? == false
     end
   end
