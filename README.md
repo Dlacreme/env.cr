@@ -8,7 +8,7 @@ env.cr ensure your environment variables are set properly.
 
    ```yaml
    dependencies:
-     env.cr:
+     envcr:
        github: dlacreme/env.cr
    ```
 
